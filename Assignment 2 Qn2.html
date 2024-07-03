@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Us</title>
+</head>
+<style>
+  body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #ccc;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  img {
+    margin-right: 1em;
+  }
+  h1 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    padding: 2em;
+    height: 200px;
+  }
+  .section {
+    border: 1px solid #ccc;
+    padding: 1em;
+  }
+  .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: #eee;
+  }
+  .text {
+    text-align: center;
+  }
+  .footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #f2f2f2;
+    border-top: 1px solid #ccc;
+  }
+</style>
+<body>
+<div>
+  <div class="container">
+    <div class="logo">
+      <img src="rozascreamycornerlogo.png" alt="Logo" width="100" height="100">
+      <h1><b>ROZA'S CREAMY CORNER</b></h1>
+    </div>
+    <div>
+      <a href = "soumiiiart.html" target ="_self" class = "" onclick="activeEle()" id = "contact">Contact Us</a>
+    </div>
+  </div>
+  <div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ducimus aliquid commodi corrupti recusandae necessitatibus minus? Reiciendis, eius perspiciatis praesentium illum itaque cum ex, blanditiis dicta, soluta alias ipsam aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolor corporis praesentium ducimus ipsum et. Dolor quibusdam repudiandae deleniti nemo culpa sint cum placeat ullam facere, praesentium doloremque sequi porro! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo a quis, dolore consequatur autem dicta fugit laboriosam libero, voluptatum earum deserunt dignissimos necessitatibus unde ex? Incidunt libero ad debitis repellat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas ipsum autem commodi at recusandae dolorum voluptate odio ipsam adipisci repellat. Asperiores neque ab deleniti quam quae est ullam consectetur facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, tempore. Eum, fugiat reprehenderit alias, omnis debitis porro a aut ratione nulla ut enim esse natus accusantium maxime earum incidunt error. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime commodi eum blanditiis, magnam reiciendis eveniet, doloribus architecto, aspernatur nam possimus optio quos distinctio quisquam doloremque explicabo. Molestias, nostrum soluta! Ut. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam aut, quidem saepe deserunt aliquam minus molestias quas error perferendis nam repudiandae totam, omnis itaque consequatur voluptas! Atque dolore magnam voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ullam odio explicabo dicta temporibus maxime ducimus sit numquam, tempore at dolores molestias natus iusto, ratione id aspernatur itaque nemo non? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod consequuntur, hic, at vitae ut saepe non tempora facilis atque autem explicabo labore! Dicta voluptatum, libero eaque sed at porro fugit.</p>
+  </div> <hr>
+  <div>
+    <form action = "javascript:submitForm()" onSubmit = "return validate()">
+      <h1><b>FORM</b></h1><br><br>
+      <table>
+        <tr>
+          <td>NAME : </td>
+          <td><input type="text" name="name" id="name"></td>
+        </tr>
+        <tr>
+          <td>EMAIL : </td>
+          <td><input type="text" name="email" id="email"></td>
+        </tr>
+        <tr>
+          <td>FAVOURITE GENRE : </td>
+          <td>
+            <input type="text" name="fav_genre" id="fav_genre">
+            <a href="https://www.w3schools.com/tags/att_input_list.asp">LIST INPUT</a>
+          </td>
+        </tr>
+      </table>
+      <script>
+        function validate(){
+          let validated=true;
+          ele=document.getElementById("name");
+          if(ele.value.length <= 10){
+            validated=false;
+            window.alert("Name must be greater than 10 characters");
+          }
+          return validated;
+        }
+        function submitForm(){
+          window.alert("Form Submitted");
+        }
+      </script>
+      <input type="checkbox" name="checkbox">
+      <button type="submit">SUBSCRIBE TO OUR NEWSLETTER VIA EMAIL</button><br><br>
+      <button type="submit">SUBMIT</button><br><br>
+    </form>
+  </div>
+  <div class="footer">
+    <p>ALL RIGHTS RESERVED</p>
+  </div>
+</div>
+</body>
+</html>
